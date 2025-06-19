@@ -152,7 +152,7 @@ Our work bridges the future and the familiar, making innovation feel less like r
           <div className="aspect-[16/4.5] rounded-2xl overflow-hidden relative">
             <div className="absolute inset-0 bg-black/10 z-10"></div>
             <video className="w-full h-full object-cover" autoPlay muted loop playsInline>
-              <source src={`${basePath}/placeholder.mp4`} type="video/mp4" />
+              <source src={`/testserver/placeholder.mp4`} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
@@ -374,17 +374,17 @@ const featuredProjects = [
   {
     title: "India Blockchain Week",
     category: "BRANDING & WEBSITE 2023",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/testserver/placeholder.svg?height=600&width=800",
   },
   {
     title: "Sustainable Tech Initiative",
     category: "DESIGN SYSTEM 2023",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/testserver/placeholder.svg?height=600&width=800",
   },
   {
     title: "Digital Wellness Platform",
     category: "UX/UI DESIGN 2023",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/testserver/placeholder.svg?height=600&width=800",
   },
 ]
 
@@ -394,31 +394,31 @@ const serviceItems = [
     date: "01",
     title: "Emerging Technology Adaption Consultancy",
     slug: "brand-identity",
-    image: "/placeholder.svg?height=600&width=1000",
+    image: "/testserver/placeholder.svg?height=600&width=1000",
   },
   {
     date: "02",
     title: "Game Design & Development",
     slug: "product-design",
-    image: "/placeholder.svg?height=600&width=1000",
+    image: "/testserver/placeholder.svg?height=600&width=1000",
   },
   {
     date: "03",
     title: "Material and Future ready interfaces",
     slug: "experiments",
-    image: "/placeholder.svg?height=600&width=1000",
+    image: "/testserver/placeholder.svg?height=600&width=1000",
   },
   {
     date: "04",
     title: "Forms, Space and People",
     slug: "exhibition-design",
-    image: "/placeholder.svg?height=600&width=1000",
+    image: "/testserver/placeholder.svg?height=600&width=1000",
   },
   {
     date: "05",
     title: "Design Workshops & Education.",
     slug: "workshops",
-    image: "/placeholder.svg?height=600&width=1000",
+    image: "/testserver/placeholder.svg?height=600&width=1000",
   },
 ]
 
@@ -429,21 +429,21 @@ const caseStudies = [
     slug: "india-blockchain-week",
     category: "BRANDING & WEBSITE",
     description: "Complete branding, website, and NFT development for a major blockchain event.",
-    image: "/placeholder.svg?height=600&width=1000",
+    image: "/testserver/placeholder.svg?height=600&width=1000",
   },
   {
     title: "Ethical AI Interface",
     slug: "ethical-ai-interface",
     category: "UX/UI DESIGN",
     description: "Creating human-centered interfaces for AI systems that prioritize transparency and trust.",
-    image: "/placeholder.svg?height=600&width=1000",
+    image: "/testserver/placeholder.svg?height=600&width=1000",
   },
   {
     title: "Sustainable Tech Packaging",
     slug: "sustainable-tech-packaging",
     category: "MATERIAL DESIGN",
     description: "Developing eco-friendly packaging solutions for technology products.",
-    image: "/placeholder.svg?height=600&width=1000",
+    image: "/testserver/placeholder.svg?height=600&width=1000",
   },
 ]
 
@@ -455,7 +455,7 @@ const journalEntries = [
     category: "Technology",
     date: "March 10, 2024",
     excerpt: "We create technology that serves people—not the other way around.",
-    image: "/placeholder.svg?height=800&width=1200",
+    image: "/testserver/placeholder.svg?height=800&width=1200",
   },
   {
     title: "The Gentle Future of Digital Interfaces",
@@ -463,7 +463,7 @@ const journalEntries = [
     category: "Design",
     date: "March 15, 2024",
     excerpt: "Exploring how minimalism and thoughtful design can create calming digital experiences that respect our attention and well-being.",
-    image: "/placeholder.svg?height=800&width=1200",
+    image: "/testserver/placeholder.svg?height=800&width=1200",
   },
   {
     title: "Blockchain as a Design Material",
@@ -471,6 +471,6 @@ const journalEntries = [
     category: "Technology",
     date: "March 5, 2024",
     excerpt: "Understanding how blockchain can be approached as a material with unique, conceptual properties.",
-    image: "/placeholder.svg?height=800&width=1200",
+    image: "/testserver/placeholder.svg?height=800&width=1200",
   },
 ]
