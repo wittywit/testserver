@@ -221,7 +221,7 @@ export default function PressPage() {
       {/* Brand Assets */}
       <AnimatedSection>
         <div className="mb-20" id="press-kit">
-          <motion.h2 className="text-3xl mb-6" variants={fadeIn}>
+          <motion.h2 className="text-2xl sm:text-3xl md:text-4xl mb-6 break-words" variants={fadeIn}>
             Brand Assets
           </motion.h2>
           <motion.div className="accent-bar" variants={fadeIn}></motion.div>
@@ -333,7 +333,7 @@ export default function PressPage() {
       {/* Media Coverage */}
       <AnimatedSection>
         <div className="mb-20">
-          <motion.h2 className="text-3xl mb-6" variants={fadeIn}>
+          <motion.h2 className="text-2xl sm:text-3xl md:text-4xl mb-6 break-words" variants={fadeIn}>
             Media Coverage
           </motion.h2>
           <motion.div className="accent-bar" variants={fadeIn}></motion.div>

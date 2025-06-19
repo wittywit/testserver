@@ -165,7 +165,7 @@ export default function BrandIdentityService() {
         <section className="py-20">
           <div className="max-w-7xl mx-auto px-4 md:px-6">
             <div className="flex justify-between items-center mb-12">
-              <motion.h2 className="text-3xl" variants={fadeIn}>
+              <motion.h2 className="text-2xl sm:text-3xl md:text-4xl mb-12 break-words" variants={fadeIn}>
                 Related Case Studies
               </motion.h2>
               <motion.div variants={fadeIn}>

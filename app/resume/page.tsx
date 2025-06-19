@@ -60,8 +60,8 @@ export default function ResumePage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold mb-6">Skills</h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 break-words">Skills</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div className="p-4 bg-gray-50 rounded-lg">
             <h3 className="font-semibold mb-2">Design</h3>
             <ul className="text-gray-600 space-y-1">
@@ -93,7 +93,7 @@ export default function ResumePage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold mb-6">Education</h2>
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 break-words">Education</h2>
         <div className="space-y-4">
           <div>
             <div className="flex justify-between items-start">

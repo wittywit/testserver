@@ -85,7 +85,7 @@ export default function CaseStudiesPage() {
                   </div>
                   <div className="space-y-4">
                     <div className="text-sm text-[#fb4e4e]">{study.date}</div>
-                    <h2 className="text-3xl font-normal group-hover:text-[#fb4e4e] transition-colors">
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-normal group-hover:text-[#fb4e4e] transition-colors break-words">
                       {study.title}
                     </h2>
                     <p className="text-gray-600">{study.description}</p>

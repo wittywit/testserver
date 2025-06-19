@@ -158,7 +158,7 @@ export default function AwardsPage() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <AnimatedSection>
-            <motion.h2 className="text-5xl mb-12" variants={fadeIn}>
+            <motion.h2 className="text-2xl sm:text-5xl mb-12 break-words" variants={fadeIn}>
               From luxurious residences to
               <br />
               <span className="text-gray-400">cutting-edge</span>
@@ -196,25 +196,25 @@ export default function AwardsPage() {
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center">
             <AnimatedSection>
-              <motion.div variants={fadeIn} className="text-8xl font-light text-gray-200">
+              <motion.div variants={fadeIn} className="text-4xl sm:text-8xl font-light text-gray-200 break-words">
                 PRIDE
               </motion.div>
             </AnimatedSection>
 
             <AnimatedSection delay={0.2}>
-              <motion.div variants={fadeIn} className="text-8xl font-light text-gray-200">
+              <motion.div variants={fadeIn} className="text-4xl sm:text-8xl font-light text-gray-200 break-words">
                 IN
               </motion.div>
             </AnimatedSection>
 
             <AnimatedSection delay={0.4}>
-              <motion.div variants={fadeIn} className="text-8xl font-light text-gray-200">
+              <motion.div variants={fadeIn} className="text-4xl sm:text-8xl font-light text-gray-200 break-words">
                 EVERY
               </motion.div>
             </AnimatedSection>
 
             <AnimatedSection delay={0.6}>
-              <motion.div variants={fadeIn} className="text-8xl font-light text-gray-200">
+              <motion.div variants={fadeIn} className="text-4xl sm:text-8xl font-light text-gray-200 break-words">
                 DETAIL
               </motion.div>
             </AnimatedSection>

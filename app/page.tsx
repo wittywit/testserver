@@ -87,7 +87,7 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-12 w-full">
               <div className="flex flex-col justify-center">
                 <motion.h1
-                  className="text-6xl md:text-8xl font-normal leading-tight mb-6"
+                  className="text-4xl sm:text-6xl md:text-8xl font-normal leading-tight mb-6 break-words"
                   initial={{ opacity: 0, y: 50 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.2 }}
@@ -183,7 +183,7 @@ Our work bridges the future and the familiar, making innovation feel less like r
       <AnimatedSection>
         <section className="py-20 border-t border-b rounded-section">
           <div className="max-w-7xl mx-auto px-4 md:px-6">
-            <motion.h2 className="text-5xl mb-12" variants={fadeIn}>
+            <motion.h2 className="text-2xl sm:text-4xl mb-12 break-words" variants={fadeIn}>
               OUR SERVICES
             </motion.h2>
             <motion.p className="text-lg mb-8 max-w-2xl text-justify" variants={fadeIn}>
@@ -284,7 +284,7 @@ Our work bridges the future and the familiar, making innovation feel less like r
       <AnimatedSection>
         <section className="py-20 rounded-section">
           <div className="max-w-7xl mx-auto px-4 md:px-6">
-            <motion.h2 className="text-4xl mb-12" variants={fadeIn}>
+            <motion.h2 className="text-2xl sm:text-4xl mb-12 break-words" variants={fadeIn}>
               Our Offerings
             </motion.h2>
 

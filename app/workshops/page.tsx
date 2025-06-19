@@ -148,7 +148,7 @@ export default function WorkshopsPage() {
                 making it accessible and engaging. Through interactive exercises and visual metaphors, participants gain
                 a practical understanding of how ZKPs work and their applications in blockchain technology.
               </p>
-              <div className="grid grid-cols-2 gap-4 mb-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
                 <div className="flex items-center gap-2">
                   <Users className="w-4 h-4 text-[#fb4e4e]" />
                   <span>Corporate Teams</span>
@@ -222,7 +222,7 @@ export default function WorkshopsPage() {
                 <div className="p-6">
                   <h3 className="text-xl font-medium mb-4">{workshop.title}</h3>
                   <p className="text-gray-600 mb-4">{workshop.description}</p>
-                  <div className="grid grid-cols-2 gap-2 mb-4 text-sm">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mb-4 text-sm">
                     <div className="flex items-center gap-2">
                       <Clock className="w-4 h-4 text-[#fb4e4e]" />
                       <span>{workshop.duration}</span>
