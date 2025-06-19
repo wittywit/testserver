@@ -1,11 +1,12 @@
 import ExperimentClient from './ExperimentClient'
 import { notFound } from 'next/navigation'
+import { basePath } from "@/lib/basePath"
 
 const experiments = [
   {
     title: "Morning Light",
     description: "A study of how natural light transforms spaces throughout the day.",
-    image: "/images/experiments/morning-light.jpg",
+    image: `${basePath}/images/experiments/morning-light.jpg`,
     slug: "morning-light",
     content: [
       {
@@ -21,7 +22,7 @@ const experiments = [
   {
     title: "Water Surface",
     description: "Exploring the dynamic patterns and reflections created by water surfaces.",
-    image: "/images/experiments/water-surface.jpg",
+    image: `${basePath}/images/experiments/water-surface.jpg`,
     slug: "water-surface",
     content: [
       {
@@ -37,7 +38,7 @@ const experiments = [
   {
     title: "Shadow Compositions",
     description: "Investigating the interplay of light and shadow in architectural spaces.",
-    image: "/images/experiments/shadow-compositions.jpg",
+    image: `${basePath}/images/experiments/shadow-compositions.jpg`,
     slug: "shadow-compositions",
     content: [
       {
@@ -53,7 +54,7 @@ const experiments = [
   {
     title: "Weathered Wood",
     description: "Documenting the natural aging process and patina of wooden surfaces.",
-    image: "/images/experiments/weathered-wood.jpg",
+    image: `${basePath}/images/experiments/weathered-wood.jpg`,
     slug: "weathered-wood",
     content: [
       {
@@ -69,7 +70,7 @@ const experiments = [
   {
     title: "Urban Negative Spaces",
     description: "Examining the overlooked voids and gaps in urban environments.",
-    image: "/images/experiments/urban-negative-spaces.jpg",
+    image: `${basePath}/images/experiments/urban-negative-spaces.jpg`,
     slug: "urban-negative-spaces",
     content: [
       {
@@ -85,7 +86,7 @@ const experiments = [
   {
     title: "Condensation Patterns",
     description: "Capturing the ephemeral beauty of condensation on various surfaces.",
-    image: "/images/experiments/condensation-patterns.jpg",
+    image: `${basePath}/images/experiments/condensation-patterns.jpg`,
     slug: "condensation-patterns",
     content: [
       {

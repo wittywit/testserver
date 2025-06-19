@@ -7,6 +7,7 @@ import { ArrowRight } from "lucide-react"
 import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef } from "react"
+import { basePath } from "@/lib/basePath"
 
 // Animation variants
 const fadeIn = {
@@ -112,7 +113,7 @@ export default function BrandIdentityService() {
               </motion.div>
               <motion.div className="relative aspect-[4/3]" variants={fadeIn}>
                 <Image
-                  src="/placeholder.svg"
+                  src={`${basePath}/placeholder.svg`}
                   alt="Brand identity overview"
                   fill
                   className="object-cover"
@@ -179,7 +180,7 @@ export default function BrandIdentityService() {
                 <Link href="/case-study/india-blockchain-week" className="group">
                   <div className="relative aspect-[4/3] mb-6">
                     <Image
-                      src="/placeholder.svg"
+                      src={`${basePath}/placeholder.svg`}
                       alt="India Blockchain Week"
                       fill
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -197,7 +198,7 @@ export default function BrandIdentityService() {
                 <Link href="/case-study/ethical-ai-interface" className="group">
                   <div className="relative aspect-[4/3] mb-6">
                     <Image
-                      src="/placeholder.svg"
+                      src={`${basePath}/placeholder.svg`}
                       alt="Ethical AI Interface"
                       fill
                       className="object-cover transition-transform duration-500 group-hover:scale-105"

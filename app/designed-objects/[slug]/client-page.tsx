@@ -7,6 +7,7 @@ import { ArrowLeft } from "lucide-react"
 import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef, useState } from "react"
+import { basePath } from "@/lib/basePath"
 
 // Animation variants
 const fadeIn = {
@@ -74,7 +75,7 @@ export default function ObjectDetailPage({ object }: { object: any }) {
         >
           <div className="relative aspect-square">
             <Image
-              src={object.images[selectedImage] || "/placeholder.svg"}
+              src={object.images[selectedImage] ? `${basePath}${object.images[selectedImage]}` : `${basePath}/placeholder.svg`}
               alt={object.title}
               fill
               className="object-cover"
@@ -90,7 +91,7 @@ export default function ObjectDetailPage({ object }: { object: any }) {
                 onClick={() => setSelectedImage(index)}
               >
                 <Image
-                  src={image || "/placeholder.svg"}
+                  src={image ? `${basePath}${image}` : `${basePath}/placeholder.svg`}
                   alt={`${object.title} - view ${index + 1}`}
                   fill
                   className="object-cover"

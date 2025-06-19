@@ -8,6 +8,7 @@ import { ArrowRight, Calendar, MapPin } from "lucide-react"
 import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef, useState, useEffect } from "react"
+import { basePath } from "@/lib/basePath"
 
 // Animation variants
 const fadeIn = {
@@ -92,7 +93,7 @@ export default function ExhibitionsPage() {
             </div>
           </motion.div>
           <motion.div className="relative aspect-[4/3]" variants={fadeIn}>
-            <Image src="/placeholder.svg?key=eiev9" alt="Exhibition space" fill className="object-cover" />
+            <Image src={`${basePath}/placeholder.svg?key=eiev9`} alt="Exhibition space" fill className="object-cover" />
           </motion.div>
         </div>
       </AnimatedSection>
@@ -145,7 +146,7 @@ export default function ExhibitionsPage() {
               <div className="absolute top-6 left-6 z-10 bg-[#fb4e4e] text-white px-4 py-1">PAST EXHIBITION</div>
               <div className="relative aspect-[21/9] w-full">
                 <Image
-                  src={`/raw${currentImage}.png`}
+                  src={`${basePath}/raw${currentImage}.png`}
                   alt="Design Futures Pavilion: RAW Collaborative 24"
                   fill
                   className="object-cover"
@@ -436,7 +437,7 @@ const exhibitions = [
     location: "Main Gallery, Studio Poetics, Goa",
     description:
       "A deep dive into the versatility of paper as a material, featuring folding techniques, lighting effects, and structural innovations.",
-    image: "/placeholder.svg?height=800&width=1000&query=paper art exhibition",
+    image: `${basePath}/placeholder.svg?height=800&width=1000&query=paper art exhibition`,
     status: "past",
   },
   {
@@ -446,7 +447,7 @@ const exhibitions = [
     location: "Project Space, Studio Poetics, Goa",
     description:
       "Investigating how light transforms ordinary objects into extraordinary experiences through a series of installations.",
-    image: "/placeholder.svg?height=800&width=1000&query=light art installation",
+    image: `${basePath}/placeholder.svg?height=800&width=1000&query=light art installation`,
     status: "past",
   },
   {
@@ -456,7 +457,7 @@ const exhibitions = [
     location: "National Design Museum, New Delhi",
     description:
       "Exploring innovative approaches to textile design, including e-textiles, sustainable materials, and traditional craft techniques.",
-    image: "/placeholder.svg?height=800&width=1000&query=textile exhibition",
+    image: `${basePath}/placeholder.svg?height=800&width=1000&query=textile exhibition`,
     status: "past",
   },
 ]
