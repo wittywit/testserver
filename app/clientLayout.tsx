@@ -15,7 +15,7 @@ export default function ClientLayout({
   const pathname = usePathname()
 
   return (
-    <body className={`bg-white text-black min-h-screen flex flex-col`}>
+    <body className={`bg-white text-black min-h-screen flex flex-col overflow-x-hidden`}>
       <Navigation />
       <AnimatePresence mode="wait">
         <motion.main
