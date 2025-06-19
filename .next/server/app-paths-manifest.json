@@ -1,0 +1,8 @@
+{
+  "/journal/page": "app/journal/page.js",
+  "/case-study/page": "app/case-study/page.js",
+  "/services/workshops/page": "app/services/workshops/page.js",
+  "/experiments/page": "app/experiments/page.js",
+  "/services/exhibition-design/page": "app/services/exhibition-design/page.js",
+  "/services/experiments/page": "app/services/experiments/page.js"
+}
