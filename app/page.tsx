@@ -99,7 +99,7 @@ export default function Home() {
                   <br />
                   & CURIOUS
                   <br />
-                  <span className="text-[#fb4e4e]">EXPERIENCES</span>
+                  <span className="text-[#fb4e4e]">EXPERIENCE</span>
                 </motion.h1>
 
                 <motion.div
