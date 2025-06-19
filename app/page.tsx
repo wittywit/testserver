@@ -8,6 +8,7 @@ import { ArrowRight } from "lucide-react"
 import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef, useState } from "react"
+import { basePath } from "@/lib/basePath"
 
 // Animation variants
 const fadeIn = {
@@ -151,7 +152,7 @@ Our work bridges the future and the familiar, making innovation feel less like r
           <div className="aspect-[16/4.5] rounded-2xl overflow-hidden relative">
             <div className="absolute inset-0 bg-black/10 z-10"></div>
             <video className="w-full h-full object-cover" autoPlay muted loop playsInline>
-              <source src="/placeholder.mp4" type="video/mp4" />
+              <source src={`${basePath}/placeholder.mp4`} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
@@ -219,7 +220,7 @@ Our work bridges the future and the familiar, making innovation feel less like r
                     >
                       <div className="relative w-full h-full">
                         <Image
-                          src={item.image || "/placeholder.svg"}
+                          src={item.image ? `${basePath}${item.image}` : `${basePath}/placeholder.svg`}
                           alt={item.title}
                           fill
                           className="object-cover rounded-md"
@@ -260,7 +261,7 @@ Our work bridges the future and the familiar, making innovation feel less like r
                   whileHover={{ y: -10, transition: { duration: 0.3 } }}
                 >
                   <div className="relative aspect-[4/3]">
-                    <Image src={study.image || "/placeholder.svg"} alt={study.title} fill className="object-cover" />
+                    <Image src={study.image ? `${basePath}${study.image}` : `${basePath}/placeholder.svg`} alt={study.title} fill className="object-cover" />
                   </div>
                   <div className="p-6">
                     <div className="text-xs text-[#fb4e4e] mb-2">{study.category}</div>
@@ -345,7 +346,7 @@ Our work bridges the future and the familiar, making innovation feel less like r
                   whileHover={{ y: -10, transition: { duration: 0.3 } }}
                 >
                   <div className="relative aspect-[4/3]">
-                    <Image src={entry.image || "/placeholder.svg"} alt={entry.title} fill className="object-cover" />
+                    <Image src={entry.image ? `${basePath}${entry.image}` : `${basePath}/placeholder.svg`} alt={entry.title} fill className="object-cover" />
                   </div>
                   <div className="p-6">
                     <div className="text-xs text-[#fb4e4e] mb-2">{entry.category}</div>

@@ -8,6 +8,7 @@ import { ArrowRight, Download, Copy, Check } from "lucide-react"
 import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef, useState } from "react"
+import { basePath } from "@/lib/basePath"
 
 // Animation variants
 const fadeIn = {
@@ -234,7 +235,7 @@ export default function PressPage() {
             <motion.div className="border border-gray-200 p-6" variants={fadeIn}>
               <h3 className="text-xl mb-4">Logo Package</h3>
               <div className="relative aspect-video bg-gray-100 flex items-center justify-center mb-6">
-                <Image src="/placeholder.svg?key=vqrjh" alt="Studio Poetics Logo" fill className="object-contain p-8" />
+                <Image src={`${basePath}/placeholder.svg?key=vqrjh`} alt="Studio Poetics Logo" fill className="object-contain p-8" />
               </div>
               <p className="text-sm text-gray-600 mb-4">
                 Our logo package includes PNG, SVG, and EPS formats in both color and monochrome versions, optimized for
@@ -253,13 +254,13 @@ export default function PressPage() {
               <h3 className="text-xl mb-4">Image Gallery</h3>
               <div className="grid grid-cols-3 gap-2 mb-6">
                 <div className="relative aspect-square bg-gray-100">
-                  <Image src="/placeholder.svg?key=atwzz" alt="Studio Space" fill className="object-cover" />
+                  <Image src={`${basePath}/placeholder.svg?key=atwzz`} alt="Studio Space" fill className="object-cover" />
                 </div>
                 <div className="relative aspect-square bg-gray-100">
-                  <Image src="/design-team-collaboration.png" alt="Team Collaboration" fill className="object-cover" />
+                  <Image src={`${basePath}/design-team-collaboration.png`} alt="Team Collaboration" fill className="object-cover" />
                 </div>
                 <div className="relative aspect-square bg-gray-100">
-                  <Image src="/placeholder.svg?key=4yozt" alt="Material Samples" fill className="object-cover" />
+                  <Image src={`${basePath}/placeholder.svg?key=4yozt`} alt="Material Samples" fill className="object-cover" />
                 </div>
               </div>
               <p className="text-sm text-gray-600 mb-4">

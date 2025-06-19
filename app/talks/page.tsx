@@ -4,6 +4,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight, Play, Pause } from "lucide-react"
 import { useState, useRef, useEffect } from "react"
+import { basePath } from "@/lib/basePath"
 
 // Audio Player Component
 function AudioPlayer({ audioSrc, title }: { audioSrc: string; title: string }) {
@@ -84,7 +85,7 @@ export default function TalksPage() {
         {talks.map((talk, index) => (
           <div key={index} className="border-t pt-4">
             <div className="image-container-rounded aspect-video relative mb-4">
-              <Image src={talk.image || "/placeholder.svg"} alt={talk.title} fill className="object-cover" />
+              <Image src={talk.image ? `${basePath}${talk.image}` : `${basePath}/placeholder.svg`} alt={talk.title} fill className="object-cover" />
             </div>
             <div className="text-xs text-gray-600 mb-1">{talk.category}</div>
             <h3 className="text-xl font-normal mb-2">{talk.title}</h3>

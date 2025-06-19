@@ -3,6 +3,7 @@ import { notFound } from "next/navigation"
 import Image from "next/image"
 import Link from "next/link"
 import { motion } from "framer-motion"
+import { basePath } from "@/lib/basePath"
 
 // This would typically come from a database or CMS
 const products = {

@@ -1,5 +1,6 @@
 import { getDesignedObjectBySlug, getAllDesignedObjects } from "@/lib/data"
 import { notFound } from "next/navigation"
+import { basePath } from "@/lib/basePath"
 
 export default async function DesignedObjectPage({ params }: { params: { slug: string } }) {
   const object = await getDesignedObjectBySlug(params.slug)
@@ -14,7 +15,7 @@ export default async function DesignedObjectPage({ params }: { params: { slug: s
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
           {object.image && (
-            <img src={object.image || "/placeholder.svg"} alt={object.title} className="w-full h-auto rounded-lg" />
+            <img src={object.image ? `${basePath}${object.image}` : `${basePath}/placeholder.svg`} alt={object.title} className="w-full h-auto rounded-lg" />
           )}
         </div>
         <div>
@@ -45,7 +46,7 @@ export default async function DesignedObjectPage({ params }: { params: { slug: s
             {object.images.map((image, index) => (
               <img
                 key={index}
-                src={image || "/placeholder.svg"}
+                src={image ? `${basePath}${image}` : `${basePath}/placeholder.svg`}
                 alt={`${object.title} - Image ${index + 1}`}
                 className="w-full h-64 object-cover rounded-lg"
               />
